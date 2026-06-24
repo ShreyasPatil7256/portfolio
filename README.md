@@ -1,4 +1,4 @@
-# Rudra Mankar — Portfolio
+# Shreyas Patil — Portfolio
 
 A full stack web developer portfolio built with React + Vite, in a white & purple theme.
 
