@@ -1,0 +1,155 @@
+.hero {
+  padding: 88px 0 70px;
+  background: radial-gradient(circle at top right, var(--purple-50) 0%, #ffffff 55%);
+}
+
+.hero-inner {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 56px;
+  align-items: center;
+}
+
+.hero-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.hero-title {
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 1.12;
+  letter-spacing: -0.01em;
+}
+
+.hero-title-accent {
+  color: var(--purple-500);
+  position: relative;
+}
+
+.hero-text {
+  font-size: 17px;
+  color: var(--ink-soft);
+  max-width: 480px;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 14px;
+  margin-top: 6px;
+}
+
+.hero-stats {
+  display: flex;
+  gap: 38px;
+  margin-top: 26px;
+  padding-top: 26px;
+  border-top: 1px solid var(--line);
+}
+
+.hero-stats h3 {
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--purple-600);
+}
+
+.hero-stats p {
+  font-size: 13px;
+  color: var(--ink-faint);
+  margin-top: 4px;
+}
+
+.hero-visual {
+  position: relative;
+}
+
+.hero-card {
+  border-radius: var(--radius-lg);
+  background: var(--ink);
+  color: #e7e2f7;
+}
+
+.hero-card-main {
+  padding: 28px 26px;
+  box-shadow: 0 30px 60px -20px rgba(46, 16, 101, 0.35);
+}
+
+.hero-card-main pre {
+  font-family: var(--font-mono);
+  font-size: 13.5px;
+  line-height: 1.8;
+  margin: 18px 0 0;
+  white-space: pre-wrap;
+  color: #d8cef7;
+}
+
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 6px;
+}
+
+.dot-red {
+  background: #f0997b;
+}
+.dot-amber {
+  background: #f0c785;
+}
+.dot-green {
+  background: #97c459;
+}
+
+.hero-card-float {
+  position: absolute;
+  bottom: -28px;
+  left: -28px;
+  background: #ffffff;
+  color: var(--ink);
+  border: 1px solid var(--line);
+  padding: 16px 20px;
+  border-radius: var(--radius-md);
+  box-shadow: 0 20px 40px -16px rgba(46, 16, 101, 0.25);
+}
+
+.hero-card-float-label {
+  font-size: 12px;
+  color: var(--purple-600);
+  font-family: var(--font-mono);
+}
+
+.hero-card-float-value {
+  font-size: 14.5px;
+  font-weight: 600;
+  margin-top: 4px;
+}
+
+@media (max-width: 900px) {
+  .hero-inner {
+    grid-template-columns: 1fr;
+  }
+  .hero-title {
+    font-size: 36px;
+  }
+  .hero-visual {
+    order: -1;
+  }
+  .hero-card-float {
+    left: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-stats {
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+  .hero-actions {
+    flex-direction: column;
+  }
+  .hero-actions .btn {
+    width: 100%;
+  }
+}
