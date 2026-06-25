@@ -20,7 +20,7 @@ export default function Footer() {
     <footer className="footer">
       <div className="container footer-inner">
         <div className="footer-brand">
-          <h3>Rudra Mankar</h3>
+          <h3>Shreyas Patil</h3>
           <p>Full stack web developer crafting clean, purposeful products.</p>
         </div>
 
